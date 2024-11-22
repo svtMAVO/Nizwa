@@ -1,0 +1,123 @@
+/* Contact Us Container */
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #1A3C6B;
+}
+
+.contact-us h2 {
+  font-size: 30px;
+  color: #1A3C6B;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-us p {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 30px;
+  line-height: 1.6;
+}
+
+/* Contact Cards */
+.contact-card {
+  background-color: #FFFFFF;
+  padding: 25px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card h3 {
+  color: #2D5F9A;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Contact Details with Icons */
+.contact-detail {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-detail i {
+  color: #1A3C6B;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact-detail .fa-whatsapp {
+  color: #25D366;
+}
+
+/* Email and WhatsApp Links as Buttons */
+.email-link, .whatsapp-link {
+  margin-left: auto;
+  color: #FFFFFF;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1A3C6B;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-link:hover {
+  background-color: #173c64;
+  transform: scale(1.05);
+}
+
+.whatsapp-link {
+  background-color: #25D366;
+}
+
+.whatsapp-link:hover {
+  background-color: #20c65a;
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .contact-card {
+      width: 95%;
+      margin: 10px auto;
+  }
+  
+  .contact-card h3 {
+      font-size: 20px;
+  }
+  
+  .contact-detail {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .email-link, .whatsapp-link {
+      margin-left: 0;
+      margin-top: 8px;
+  }
+}

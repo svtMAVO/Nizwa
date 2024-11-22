@@ -1,0 +1,91 @@
+/* Container for the services section */
+.services-container {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.services-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Added gap for spacing between cards */
+}
+
+/* Individual Service Card Styling */
+.service-card {
+  width: 250px; /* Slightly increased card width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.service-icon {
+  width: 100px; /* Increased icon size for better visibility */
+  height: 100px;
+  margin-bottom: 15px; /* Added more spacing below icon */
+}
+
+.service-title {
+  font-size: 20px; /* Increased font size */
+  color: #333;
+  margin-top: 10px;
+  font-weight: 600; /* Made the title bold */
+}
+
+.service-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5; /* Improved readability by increasing line height */
+}
+
+/* Hover Effect for Service Card */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #e6f2ff; /* Light blue background on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card {
+      width: 90%; /* Make cards full-width on smaller screens */
+      margin: 10px auto; /* Center align the cards */
+  }
+
+  .service-icon {
+      width: 80px;
+      height: 80px;
+  }
+
+  .service-title {
+      font-size: 18px;
+  }
+
+  .service-description {
+      font-size: 13px;
+  }
+}

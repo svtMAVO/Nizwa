@@ -1,0 +1,189 @@
+/* Navbar container */
+.NePg1 {
+  background-color: #1A3C6B;
+  padding: 10px 20px; /* Reduced padding for less height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid #FFC107;
+  transition: all 0.3s ease;
+}
+
+/* Navbar sections */
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.middle {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Logo Video Container */
+.video-container {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%; /* Perfectly circular container */
+  overflow: hidden;
+  background: none; /* No background applied */
+  box-shadow: none; /* No box-shadow */
+}
+
+/* Logo Video styling with golden border and shine */
+.NelogoVideo {
+  width: 95%;
+  height: 75%;
+  object-fit: cover; /* Ensures the video fits perfectly */
+  border-radius: 50%; /* Keeps the circular appearance */
+  border: 2px solid transparent; /* Base border */
+  background: linear-gradient(45deg, #FFD700, #FFAA00, #FFD700); /* Golden gradient */
+  background-clip: border-box; /* Applies gradient to the border */
+  animation: shine 2s linear infinite; /* Add shine animation */
+}
+
+/* Shine Animation */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+
+
+}
+
+/* Heading styling */
+.heading {
+  font-family: sans-serif;
+  font-size: 30px; /* Adjusted size */
+  font-weight: bold;
+  color: #FFFFFF; /* Explicitly set to white */
+  margin: 0;
+}
+
+/* Buttons styling */
+.right button {
+  padding: 10px 16px; /* Slightly larger padding for a premium look */
+  font-size: 14px; /* Consistent and readable */
+  font-weight: 600; /* Slightly bolder text */
+  background: linear-gradient(90deg, #FFC107, #FF9900); /* Subtle gradient for a polished effect */
+  color: #1A3C6B;
+  border-radius: 8px; /* Softer corners */
+  border: none; /* Clean edges */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+}
+
+.right button:hover {
+  background: linear-gradient(90deg, #FF9900, #FFC107); /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Subtle lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.right button.active {
+  background: #1A3C6B; /* Darker blue for active state */
+  color: #FFFFFF; /* White text for contrast */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+  transform: translateY(0); /* Neutral position for active state */
+}
+
+
+/* Dropdown menu */
+.services-dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  min-width: 200px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.dropdown-menu h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1A3C6B;
+  border-bottom: 2px solid #FFC107;
+  padding-bottom: 5px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #1A3C6B;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .NePg1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .left, .middle, .right {
+    justify-content: center;
+    flex: 1;
+    margin-top: 10px;
+  }
+
+  .right button {
+    margin: 8px 5px;
+  }
+
+  .dropdown-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
